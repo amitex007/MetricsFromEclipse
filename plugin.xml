@@ -33,6 +33,13 @@
                enablesFor="1"
                id="plugin3.actionTwo">
          </action>
+           <action
+               label="Upload JSON data"
+               class="plugin3.popup.actions.RestAction"
+               menubarPath="plugin3.menu1/group1"
+               enablesFor="1"
+               id="plugin3.restAction">
+         </action>
       </objectContribution>
    </extension>
 
