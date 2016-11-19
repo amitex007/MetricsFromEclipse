@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            objectClass="org.eclipse.jdt.core.IJavaProject"
+            id="plugin3.contribution1">
+            <visibility>
+        <objectClass
+            name="org.eclipse.jdt.core.IJavaProject" />
+    </visibility>
+         <menu
+               label="Process Metrics from XML"
+               path="additions"
+               id="plugin3.menu1">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               label="Save Metrics in DB"
+               class="plugin3.popup.actions.NewAction"
+               menubarPath="plugin3.menu1/group1"
+               enablesFor="1"
+               id="plugin3.newAction">
+         </action>
+         <action
+               label="Display Metrics Evolution"
+               class="plugin3.popup.actions.ActionTwo"
+               menubarPath="plugin3.menu1/group1"
+               enablesFor="1"
+               id="plugin3.actionTwo">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>
